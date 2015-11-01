@@ -11,9 +11,9 @@
 *.dvi
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-# *.ps
+*.ps
 # *.eps
-# *.pdf
+*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -124,3 +124,4 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+*.swp
