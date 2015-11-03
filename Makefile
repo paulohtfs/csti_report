@@ -28,8 +28,9 @@ $(TARGET): $(MAIN_FILE) $(SOURCE) $(BIBLIOGRAPHY)
 	$(BIBTEX) $(AUX_FILE)
 	$(LATEX) $(MAIN_FILE) $(SOURCE)
 	$(LATEX) $(MAIN_FILE) $(SOURCE)
-	$(DVIPS) $(DVI_FILE)
-	$(PS2PDF) $(PS_FILE)
+	dvipdfmx $(DVI_FILE)
+	#$(DVIPS) $(DVI_FILE)
+	#$(PS2PDF) $(PS_FILE)
 	@cp $(PDF_FILE) $(TARGET)
 
 clean:
