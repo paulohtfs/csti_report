@@ -20,7 +20,7 @@ PDF_FILE  = $(addsuffix .pdf, $(basename $(MAIN_FILE)))
 SOURCE = $(STATIC_FILES)
 
 
-all:
+all: clean
 	@make $(TARGET)
 
 $(TARGET): $(MAIN_FILE) $(SOURCE) $(BIBLIOGRAPHY)
